@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIQUIDACION NOTARIAL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>LIQUIDACION NOTARIAL</h1>
+    <div id="input-section">
+        <label for="compraventa">Compraventa:</label>
+        <input type="number" id="compraventa" class="input-cantidad" placeholder="Cantidad de compraventa">
+        
+        <label for="certificado">Certificado Cancelación Hipoteca:</label>
+        <input type="number" id="certificado" class="input-cantidad" placeholder="Cantidad de certificados">
+        
+        <label for="hipoteca">Hipoteca con Banco Agrario:</label>
+        <input type="number" id="hipoteca" class="input-cantidad" placeholder="Cantidad de hipotecas">
+        
+        <label for="saber">Escritura para Saber:</label>
+        <input type="number" id="saber" class="input-cantidad" placeholder="Cantidad de escrituras">
+        
+        <label for="igac">Trámite IGAC:</label>
+        <input type="number" id="igac" class="input-cantidad" placeholder="Cantidad de trámites">
+
+        <label for="dineroEnviadoInput">DINERO ENVIADO:</label>
+        <input type="text" id="dineroEnviadoInput" class="input-cantidad" placeholder="Ingrese el DINERO ENVIADO">
+
+        <div id="button-container">
+            <button id="ingresarBtn" onclick="INGRESAR()">Ingresar</button>
+            <button id="calcularBtn" onclick="CALCULAR()">Calcular</button>
+            <button onclick="Limpiar()">Limpiar</button>
+        </div>
+    </div>
+
+    <div id="errorMessage" class="error-message" style="display: none;">Primero debe hacer clic en "Ingresar" antes de calcular.</div>
+
+
+    <div id="output-section">
+
+        <table id="result-table">
+            <thead>
+                <tr>
+                    <th>ACTO</th>
+                    <th>NÚMERO DE ESCRITURA</th>
+                    <th>FECHA DE ESCRITURA</th>
+                    <th>VALOR ACTO</th>
+                    <th>VALOR TRIBUTARIA</th>
+                    <th>VALOR ORIP</th>
+                    <th>TOTAL</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Aquí se llenarán las filas -->
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
