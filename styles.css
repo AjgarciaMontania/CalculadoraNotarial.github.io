@@ -101,3 +101,17 @@ th {
 
 }
 
+
+
+/* Ajustar el tamaño del textarea en la tabla */
+#result-table textarea {
+    width: 350px; /* Ancho fijo */
+    height: 40px; /* Altura fija */
+    padding: 5px; /* Espaciado interno */
+    font-size: 18px; /* Tamaño de fuente */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+    text-align: center; /* Centrar texto */
+    resize: none; /* Evitar que el usuario cambie el tamaño */
+    overflow-y: auto; /* Permitir desplazamiento vertical si el contenido excede el tamaño */
+}
