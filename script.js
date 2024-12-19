@@ -65,7 +65,7 @@ function addRow(acto) {
     const row = document.createElement('tr');
     row.innerHTML = `
         <td>${acto}</td>
-        <td><input type="text" class="numero-escritura"></td>
+        <td><textarea class="numero-escritura" rows="3" cols="20"></textarea></td>
         <td><input type="date" class="fecha-escritura"></td>
         <td><input type="text" class="valor-acto"></td>
         <td></td>
@@ -77,7 +77,6 @@ function addRow(acto) {
     // Formatear los nuevos campos de entrada
     formatInputFields();
 }
-
 
 // Constants for fee calculations
 const FEE_CONSTANTS = Object.freeze({
@@ -365,3 +364,4 @@ function INGRESAR() {
         addRow("TRAMITE IGAC");
     }
 }
+
