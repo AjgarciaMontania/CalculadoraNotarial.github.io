@@ -80,18 +80,18 @@ function addRow(acto) {
 
 // Constants for fee calculations
 const FEE_CONSTANTS = Object.freeze({
-    BASE_FEE: 48100,
+    BASE_FEE: 50600,
     TIERS: [
-        { limit: 11622077, rate: null },  // Special case using BASE_FEE
-        { limit: 174328531, rate: 0.00825 },
-        { limit: 302169519, rate: 0.01023 },
-        { limit: 447443624, rate: 0.0114 },
-        { limit: Infinity, rate: 0.01206 }
+        { limit: 12259907, rate: null },  // Special case using BASE_FEE
+        { limit: 183895826, rate: 0.00867 },
+        { limit: 318752834, rate: 0.01076 },
+        { limit: 471999702, rate: 0.01199 },
+        { limit: Infinity, rate: 0.01268 }
     ],
     ADDITIONAL_RATE: 1.02, // 2% additional fee
     HIPOTECA_TRIBUTARIA_RATE: 0.005,  // (1/2) * 0.01
     COMPRAVENTA_TRIBUTARIA_RATE: 0.01,
-    CANCELACION_TRIBUTARIA: 173500
+    CANCELACION_TRIBUTARIA: 189800
 });
 
     function CALCULAR() {
